@@ -7,12 +7,17 @@
 
 /* Navbar */
 .navbar {
-    border: 1px solid black;
-    height: 75px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+   border: 1px solid black;
+   height: 75px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   /* justify-content: center; */
+   /* align-content: space-between; */
+   /* vertical-align: top; */
+   /* margin-left: auto; */
+   /* margin-right: auto; */
+   /* text-align: center; */
 }
-
 .navlinks, .sociallinks {
     display: flex;
 }
@@ -39,7 +44,11 @@
     margin-right: auto;
     text-align: center;
 }
+/* .sociallinks {
+    display: flex;
+    align-items: flex-end;
 
+} */
 .inline-block {
     display: inline-block;
     vertical-align: top;
@@ -57,48 +66,66 @@ nav {
     margin-right: auto;
 }
 
-/* Content - NEED HELP PLS */ 
-
-/* .Content {
-    display: flex;
-    padding: 70px;
-    max-width: 1400px;
-    margin: 0 auto;
+/* Jumbotron */
+.jumbotron {
     text-align: center;
-    padding: 40px;
-  } */
-
-/* .Portrait {
-    display: flex;
-    width: 100px;
-    margin: 50px;
-    justify-content: left;
-    height: 400px;
+    background-color: 	#e6d1d1;
+    height: 700px;
+    padding: 250px;
 }
 
-.Bio {
-    display: flex;
-    width: 500px;
-    text-align: left;
-    margin-right: 50px;
-    height: 400px;
-} */
+h1, p {
+    padding: 15px;
+}
+
+
+.btn {
+    border-radius: 25px;
+
+}
+
+.button:hover {
+    background-color: black;
+    color: #e6d1d1;
+  }
+
+/* Intro */
+
+.intro {
+    padding: 200px;
+}
 
 .column {
     float: left;
     width: 50%;
-    display: flex;
+    padding: 200px;
+  }
+  
+hr.solid {
+    border-top: 2px solid #bbb;
 }
 
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
+/* Case Study */
+.case {
+    padding: 200px;
+}
+
+h2, p {
+    padding: 15px;
+}
+
+.row {
+    display: flex;
   }
+  
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
 
 
 /* Footer */
-
 footer {
     border: 1px solid black;
     height: 75px;
@@ -118,3 +145,13 @@ footer {
     text-decoration: none;
     color: black;
     margin: 10px;
+}
+
+/* footer ul {
+    display: flex;
+    vertical-align: top;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+} */
+
